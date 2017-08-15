@@ -1,0 +1,14 @@
+active:
+  start: 08:30
+  stop: 09:30
+watch:
+  - url: http://timetableapi.ptv.vic.gov.au/v3/departures/route_type/2/stop/SET_ME?direction_id=SET_ME&max_results=5&devid=SET_ME&signature=SET_ME
+    thresholds:
+      - mins: 15
+        level: far
+      - mins: 7
+        level: near
+      - mins: 3
+        level: here
+mqtt:
+  host: localhost
