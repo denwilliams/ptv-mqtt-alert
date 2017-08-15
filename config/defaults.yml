@@ -12,3 +12,4 @@ watch:
         level: here
 mqtt:
   host: localhost
+  topic: ptv/alert
